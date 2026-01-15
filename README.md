@@ -20,17 +20,17 @@ CCAP-Net/
 └── scripts/                 # 运行脚本
 ```
 
-## requirements:
+## requirements
 - Python 3.9+
 - PyTorch 2.0+
 - NumPy, SciPy, scikit-learn
 
-## Usage:
+## usage
 After modify setting (path, etc), just run the main function in the train.py
 
-### training model:
+### training model
 python train.py --dataset SEED --sessions 1 2 3
 python train.py --dataset SEED-IV --sessions 1 2 3
 
-### evaluating model:
+### evaluating model
 python evaluate.py --dataset SEED --sessions 1 2 3
