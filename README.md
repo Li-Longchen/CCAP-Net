@@ -2,34 +2,41 @@
 This is the source code of our paper 'Cross subject EEG emotion recognition via global and local domain alignment'.
 
 ## project structure
-```
 CCAP-Net/
-├── data/                    # 数据目录
-│   ├── SEED/               # SEED数据集 (3类)
-│   └── SEED-IV/            # SEED-IV数据集 (4类)
-├── src/                     # 源代码
-│   ├── models/             # 模型定义
-│   ├── modules/            # 功能模块
-│   ├── utils/              # 工具函数
-│   ├── train.py            # 训练脚本
-│   └── evaluate.py         # 评估脚本
-├── results/                 # 输出结果
-│   ├── models/             # 保存的模型
-│   ├── logs/               # 训练日志
-│   └── visualization_results/            # 生成的可视化图表
-└── scripts/                 # 运行脚本
-```
+├─ data/                # Data directory
+│  ├─ REFED_feature/    # REFED dataset feature data folder
+│  ├─ SEED/             # SEED dataset feature data folder
+│  ├─ SEED-IV/          # SEED-IV dataset feature data folder
+│  ├─ TYUT3.0_feature/  # ENTER dataset feature data folder
+│  ├─ ENTER_dataset_data_processing_integration.py  # ENTER dataset processing script
+│  ├─ REFED_dataset_data_processing_integration.py  # REFED dataset processing script
+│  ├─ SEED_dataset_data_processing_integration.py   # SEED dataset processing script
+│  └─ SEED-IV_dataset_data_processing_integration.py# SEED-IV dataset processing script
+├─ results/             # Model training results output directory
+│  ├─ logs/             # Training logs folder
+│  ├─ models/           # Model saving folder
+│  ├─ visualization_results/ # Visualization results folder
+│  ├─ SEED/             # SEED experiment results folder
+│  ├─ SEED-IV/          # SEED-IV experiment results folder
+│  ├─ ENTER/            # ENTER experiment results folder
+│  └─ REFED/            # REFED experiment results folder
+├─ ccap_net_fixed.py    # CCAP-Net model script
+├─ cdan_fixed.py        # CDAN module script
+├─ cscfa.py             # CSCFA module script
+├─ evaluate.py          # Evaluation script
+├─ train_fixed.py       # Model training script
+├─ utils.py             # Utility functions script
+└─ visualize.py         # Visualization script
 
 ## Preliminaries
-Prepare dataset: SEED,SEED-IV,ENTER and REFED
+Prepare dataset: SEED,SEED-IV,ENTER and REFED.Then run the 4 data processing scripts provided in the data folder to get the features input to the model after processing of each data set.
 
 ## requirements
 - Python 3.9+
-- PyTorch 2.0+
-- NumPy, SciPy, scikit-learn
+- Install the corresponding software package in requirements.txt
 
 ## usage
-After modify setting (path, etc), just run the main function in the train.py
+run the main function in the train.py
 
 ## training model
 - python train.py --dataset SEED --sessions 1 2 3
