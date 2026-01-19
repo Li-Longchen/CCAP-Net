@@ -31,7 +31,7 @@ CCAP-Net/
 ```
 
 ## Preliminaries
-Prepare dataset: SEED,SEED-IV,ENTER and REFED.Then run the 4 data processing scripts provided in the data folder to get the features input to the model after processing of each data set.
+Prepare dataset: SEED,SEED-IV,ENTER and REFED.The input features of the model can be obtained by running the 4 data processing scripts provided in the data folder. The project has also directly provided the model input features corresponding to the four data sets.
 
 ## requirements
 - Python 3.9+
