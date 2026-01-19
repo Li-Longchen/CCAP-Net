@@ -24,6 +24,7 @@ CCAP-Net/
 ├─ ccap_net_fixed.py    # CCAP-Net model script
 ├─ cdan_fixed.py        # CDAN module script
 ├─ cscfa.py             # CSCFA module script
+├─ evaluate.py          # Evaluation script
 ├─ train_fixed.py       # Model training script
 ├─ utils.py             # Utility functions script
 └─ visualize.py         # Visualization script
