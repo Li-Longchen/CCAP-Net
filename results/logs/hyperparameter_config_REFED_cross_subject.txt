@@ -1,0 +1,42 @@
+======================================================================
+CCAP-Net Hyperparameter Configuration
+======================================================================
+
+【Network】
+----------------------------------------------------------------------
+Name                     | Value         | Notes
+----------------------------------------------------------------------
+input_dim                 | 310           | DE features
+hidden_1                  | 128           | hidden dim
+hidden_2 (feature_dim)    | 64            | feature dim
+num_classes               | 5             | #classes
+dropout_rate              | 0.1           | dropout
+
+【Training】
+----------------------------------------------------------------------
+batch_size                | 96           
+max_iter (epochs)         | 1200         
+warm_up_epochs (CDAN)     | 200          
+warm_up_transfer_epochs   | 100           | warm-up before DANN/CSCFA
+learning_rate             | 0.002356     
+weight_decay              | 1e-05        
+optimizer                 | RMSprop
+
+【Loss Weights / Params】
+----------------------------------------------------------------------
+transfer_weight (DANN)    | 0.5          
+cscfa_weight              | 1.0          
+cdan_weight               | 1.0          
+ce_weight                 | 1.0          
+pseudo_label_threshold    | 0.6          
+
+【Thresholds】
+----------------------------------------------------------------------
+upper_threshold           | 0.9          
+lower_threshold           | 0.5          
+CSCFA temperature         | 0.5
+CSCFA sim_threshold       | 0.7
+
+【Seed】
+----------------------------------------------------------------------
+random_seed               | 20           
