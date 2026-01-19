@@ -21,10 +21,10 @@ CCAP-Net/
 │  ├─ SEED-IV/          # SEED-IV experiment results folder
 │  ├─ ENTER/            # ENTER experiment results folder
 │  └─ REFED/            # REFED experiment results folder
-├─ ccap_net_fixed.py    # CCAP-Net model script
-├─ cdan_fixed.py        # CDAN module script
+├─ ccap_net.py          # CCAP-Net model script
+├─ cdan.py              # CDAN module script
 ├─ cscfa.py             # CSCFA module script
-├─ train_fixed.py       # Model training script
+├─ train.py             # Model training script
 └─ utils.py             # Utility functions script
 ```
 
