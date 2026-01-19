@@ -32,7 +32,7 @@ Prepare dataset: SEED,SEED-IV,ENTER and REFED
 After modify setting (path, etc), just run the main function in the train.py
 
 ## training model
-python train.py --dataset SEED --sessions 1 2 3
-python train.py --dataset SEED-IV --sessions 1 2 3
-python train.py --dataset ENTER --sessions 1
-python train.py --dataset REFED --sessions 1
+- python train.py --dataset SEED --sessions 1 2 3
+- python train.py --dataset SEED-IV --sessions 1 2 3
+- python train.py --dataset ENTER --sessions 1
+- python train.py --dataset REFED --sessions 1
