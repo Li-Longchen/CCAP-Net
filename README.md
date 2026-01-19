@@ -2,6 +2,7 @@
 This is the source code of our paper 'Cross subject EEG emotion recognition via global and local domain alignment'.
 
 ## project structure
+```
 CCAP-Net/
 ├─ data/                # Data directory
 │  ├─ REFED_feature/    # REFED dataset feature data folder
@@ -27,6 +28,7 @@ CCAP-Net/
 ├─ train_fixed.py       # Model training script
 ├─ utils.py             # Utility functions script
 └─ visualize.py         # Visualization script
+```
 
 ## Preliminaries
 Prepare dataset: SEED,SEED-IV,ENTER and REFED.Then run the 4 data processing scripts provided in the data folder to get the features input to the model after processing of each data set.
